@@ -13,7 +13,7 @@ console.log('I am b: ' + b)
 
 b = 20
 console.log('I am b: ' + b)
-//in 'let' we also can change the value of a and it will work 
+//in 'let' we also can change the value of b and it will work 
 
 
 const c = 10
@@ -24,31 +24,31 @@ console.log('I am c: ' + c)
 // anohter value of c
 
 
-// function es5var(){
-//     if(true) {
-//         var d = 5
-//     }
-//     console.log('Value of d in var: ' + d)
-// }
-// es5var()
+function es5var(){
+    if(true) {
+        var d = 5
+    }
+    console.log('Value of d in var: ' + d)
+}
+es5var()
 // we can access the value of  d outsite of  if block . because var work in FUNCTION SCOPE
 
 // on the other hand. lets apply it on 'let' and 'const'
-// function es5let(){
-//     if(true){
-//         let e = 10
-//     }
-//     console.log('Value of e in let: ' + e)
-// }
-// es5let()
+function es5let(){
+    if(true){
+        let e = 10
+    }
+    console.log('Value of e in let: ' + e)
+}
+es5let()
 
-// function es5const(){
-//     if(true){
-//         const f = 20
-//     }
-//     console.log('Value of f in const is: ' + f)
-// }
-// es5const()
+function es5const(){
+    if(true){
+        const f = 20
+    }
+    console.log('Value of f in const is: ' + f)
+}
+es5const()
 // look it showing error. because 'const' and 'let' work in BLOCK SCOPE
 
 // কারন কি? হ্যাঁ কারন হচ্ছে let বা const হচ্ছে ব্লক স্কোপে কাজ করে।
@@ -89,3 +89,5 @@ for(const k=0; k<5; k++){
 console.log('Value of "k" using  const: ' +k)
 // it will show error in when we will use const . here we already decleared k . so it is not possible
 // to declear again k 
+
+
