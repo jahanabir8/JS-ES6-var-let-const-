@@ -82,12 +82,12 @@ for(let j=0; j<5; j++){
 }
 console.log('Value of "i" using let: ' +j)
 
-const k = 13
-for(const k=0; k<5; k++){
-    console.log(k)
-}
-console.log('Value of "k" using  const: ' +k)
-// it will show error in when we will use const . here we already decleared k . so it is not possible
-// to declear again k 
+// এখানে let এর ক্ষেত্রে ভ্যারিয়েবল দুইটা সেইম নামের হলেও এরা আলাদা হয়ে গেছে ব্লক 
+// স্কোপিং এর কারনে। for এর ভিতরের টা এই ব্লকের জন্য লোকাল ভ্যারিয়েবল, আর এর বাইরে 
+// যেটা আছে সেটা গ্লোবাল ভ্যারিয়েবল।
+
+// মনে রাখবেন এই উদাহরনের জন্যে কিন্তু আপনি const ইউজ করতে পারবেন না,
+// কারন এখানে গ্লোবাল ভ্যারিয়েবলের প্রভাব for এর ভিতরেও আছে। তাই এটার ভিতরে
+// যদি আবার অ্যাসাইন করতে চান সেইম ভ্যারিয়েবল তাহলে এরর পাবেন const এর ক্ষেত্রে।
 
 
